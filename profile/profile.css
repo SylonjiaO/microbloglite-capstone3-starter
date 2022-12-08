@@ -6,7 +6,7 @@
   font-family:'Poppins', sans-serif; background-color: #ddd;
   align-items: center;
   justify-content: center;
-  }
+}
 
  *{
   box-sizing: border-box;
@@ -20,10 +20,26 @@
 
 }
 
+/*profile pic*/
+.image2{
+    border-radius: 70px;
+    border-color: white;
+    outline-style: groove;
+    image-rendering: auto;
+    image-resolution: auto;
+    outline-color: white;
+    
+}
+
+.header{
+    
+}
+
+
 
 
 .container1 {
-	max-width: 640px;
+	max-width: 1200px;
 	margin: 30px auto;
 	background: #fff;
 	border-radius: 8px;
@@ -42,17 +58,107 @@
 }
 
 .container1 textarea {
-	width: 100%;
+	width: 207%;
 	border: none;
-	background: #E8E8E8;
-	padding: 5px 10px;
-	height: 50%;
+	background: white;
+	padding: 20px 10px;
+	height: 100%;
 	border-radius: 5px 5px 0px 0px;
 	border-bottom: 2px solid #016BA8;
 	transition: all 0.5s;
-	margin-top: 15px;
+	margin-top: 20px;
+    
 }
 
 button.primaryContained:hover {
-	background: #9201A8;
+	background: #016BA8;
+}
+
+
+
+
+
+
+/* The sidebar menu */
+.sidebar {
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0;
+    left: 0;
+    background-color: rgb(39, 35, 114); 
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s; 
+  }
+  
+  /* The sidebar links */
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* The button used to open the sidebar */
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+  /* Style page content */
+  #main {
+    transition: margin-left .5s; 
+    padding: 20px;
+  }
+  
+  
+  @media screen and (max-height: 450px){
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}}
+
+
+
+body {
+    background-image: url('https://www.bing.com/th/id/OGC.ad0528c4e1f6eb1cdcf78676c8f2c741?pid=1.7&rurl=https%3a%2f%2fj.gifs.com%2fyalkdM.gif&ehk=%2f8y8JRDrsAo25pkL0cOt98ZExwWSdVQ039VCpP5enFw%3d');
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
+input#go {background-color: #000;
+    color:#818181 ;
+    padding: 10px 10px
+}
+
+input#go:hover{
+    background-color: #000;
+    color:  #016BA8;
 }

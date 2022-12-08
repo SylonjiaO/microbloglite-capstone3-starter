@@ -21,6 +21,7 @@
     />
 <!-- Page-specific CSS -->
     <link rel="stylesheet" href="profile.css">
+
     
     
 
@@ -29,61 +30,38 @@
     <script>
         if (isLoggedIn() === false) window.location.replace("/");
     </script>
-
+   
   </head>
   <body>
+ <div  class="header">
+  <img src="https://mcdn.wallpapersafari.com/medium/24/52/JOVreY.jpg"width="1500px" height="450px" alt="horizon"> 
+  
+ </div>
+    
     <header>
-      <!-- place navbar here -->
-      <nav class="navbar navbar-expand navbar-light bg-light">
-          <ul class="nav navbar-nav">
-              <li class="nav-item">
-                  <a class="nav-link active" href="#" aria-current="page">Profile <span class="visually-hidden">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#">Post</a>
-              </li>
-          </ul>
-      </nav>
+      
       <!--profile info/pic-->
-      <div class="container">
-        <div class="box">
-          <img src="https://th.bing.com/th/id/OIP.dNtWcnFO5e7OgU_7OeZWQwHaHa?w=153&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7">
-          <ul>
-            <li> Tony Stark</li>
-            <li>39 Years Old</li>
-            <li>Avenger</li>
-            <i style="font-size:24px" class="fa">&#xf230;</i>
-            <i style="font-size:24px" class="fa">&#xf0d5;</i>
-            <i style="font-size:24px" class="fa">&#xf0e1;</i></li>
-          </ul>
+     <h1> <div class="container">
+        <div style="position:relative; right: 80px; bottom: 100px;" class="container" class="box">
+          <img src="https://mcdn.wallpapersafari.com/medium/54/87/3jG7Yb.jpg" width="120px" height="120px" class="image2">
+        </h1>
+        
         </div>
-        <div class="About">
+        <div style="position:relative; bottom: 100px; color:white ;" class="Tony Stark">
           <ul>
-            <h1>About</h1>
-          </ul>
-          <ul>
-          <h3>Work</h3>
-          <li>Avenger</li>
-          </ul>
-          <ul>
-            <h3>Gender</h3>
-            <li>Male</li>
-           </ul>
-            <ul>
-          <h3>Country</h3>
-          <li>United States Of America</li>
+            <h1>Tony Stark</h1> 
+            <p>@tstark300</p>
+        </div>
+        <div class="container2">
+        <div style="position:relative; left:30px; bottom: 80px; color: white; ">
+              <p>Genius. Billionaire. Philanthropist. Sarcastic. Egomaniac. Iron Man. That's what most people know me as but outside of my spectatcular armor made by your's truly and outside of the Armani Exchange suit's I'm just another man who appreciate's life for what it is.</p></div>
             </ul>
+
             <ul>
-              <h3>More Information</h3>
-              <p>Genius. Billionaire. Philanthropist. Sarcastic. Egomaniac. Iron Man. That's what most people know me as but outside of my spectatcular armor made by your's truly and outside of the Armani Exchange suit's I'm just another man who appreciate's life for what it is. Forgetting the battle's of occasional Alien's and Purple guy's who's went off the brink of insanity. I mean the simple thing's in life such as getting a coffee or driving my Lamborghini to headquarter's or even just driving up to the beach to collect my thought's or even something as starting a blog page. I was born in Long Island raised as orphan due to my parent's being killed in a car accident but ever since that tragic story I've always had a thing for writing in a journal I guess you could say keeping tabs about daily thing's happening in my life so I figured why not do what this socially depressing society does and create a blog of the in scops of my life so here it is.</p>
-            </ul>
-            <ul>
-              <h3>Contact</h3>
-              <li>tonyS3000@gmail.com</li>
-              
-              <!--Blog post box-->
+               <!--Blog post box-->
               <section id="app">
-                <div class="container1">
+                <div style="position:relative; bottom:50px; left:40px" 
+                class="container1">
                   <div class="row">
                     <div class="col-6">
                       <div class="thoughts">
@@ -100,6 +78,23 @@
                 </div>
               </section>
                 
+
+              <!-- place navbar here -->
+              <div  id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="http://127.0.0.1:5500/profile/profile.html#">Profile</a>
+                <a href="http://127.0.0.1:5500/posts/index.html">Post</a>
+           </a>
+                <input type="button" value="Logout"  id="go">            
+
+              </div>
+              
+              <div id="main">
+                <button class="openbtn" onclick="openNav()">&#9776; Open Sidebar</button>
+
+              </div>
+              
+              
                
 
 
